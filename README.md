@@ -24,41 +24,39 @@ More games coming soon!
 ### Pac-Man preview
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/demo/pacman-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/demo/pacman.svg">
+    <img alt="pacman contribution graph" src="assets/demo/pacman.svg">
 </picture>
 
 ### Breakout preview
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/breakout-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/breakout-contribution-graph.svg">
-  <img alt="breakout contribution graph" src="https://raw.githubusercontent.com/abozanona/abozanona/output/breakout-contribution-graph.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/demo/breakout-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/demo/breakout.svg">
+    <img alt="breakout contribution graph" src="assets/demo/breakout.svg">
 </picture>
 
 ### Galaga preview
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/galaga-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/galaga-contribution-graph.svg">
-  <img alt="galaga contribution graph" src="https://raw.githubusercontent.com/abozanona/abozanona/output/galaga-contribution-graph.svg">
+    <img alt="galaga contribution graph" src="assets/demo/galaga.svg">
 </picture>
 
 ### Puzzle Bobble preview
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/puzzle-bobble-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/puzzle-bobble-contribution-graph.svg">
-  <img alt="puzzle bobble contribution graph" src="https://raw.githubusercontent.com/abozanona/abozanona/output/puzzle-bobble-contribution-graph.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/demo/puzzle-bobble-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/demo/puzzle-bobble.svg">
+    <img alt="puzzle bobble contribution graph" src="assets/demo/puzzle-bobble.svg">
 </picture>
 
 ### Bomberman preview
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/bomberman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/bomberman-contribution-graph.svg">
-  <img alt="bomberman contribution graph" src="https://raw.githubusercontent.com/abozanona/abozanona/output/bomberman-contribution-graph.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/demo/bomberman-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/demo/bomberman.svg">
+    <img alt="bomberman contribution graph" src="assets/demo/bomberman.svg">
 </picture>
 
 ## 🎮 Features
