@@ -125,24 +125,13 @@ Here's how to set up and run the games:
     - `username`: Your GitHub or GitLab username.
     - `platform`: Specify `'github'` or `'gitlab'`.
     - `gameTheme`: Choose between `'github'`, `'github-dark'`, `'gitlab'`, or `'gitlab-dark'`.
+    - `scenario`: Use a predefined contribution scenario instead of fetching platform contributions. Available scenarios: `full`, `empty`, `random`, `checkerboard`, `gradient`, `streaks`.
     - `playerStyle` _(Pac-Man only)_: `PlayerStyle.OPPORTUNISTIC` (default), `PlayerStyle.CONSERVATIVE`, or `PlayerStyle.AGGRESSIVE`.
     - `svgCallback`: Called with the finished SVG string once generation is complete.
     - `gameOverCallback`: Called when the game finishes.
     - `pointsIncreasedCallback`: Called each time the score increases.
     - `gameStatsCallback`: Called at the end with `{ totalScore, steps, ghostsEaten }`.
     - `githubSettings`: `{ accessToken: 'your_token' }` for private contribution data.
-
-### CLI Scenarios
-
-Use `--scenario <name>` to generate a game from predefined contribution data instead of fetching a user's real
-GitHub or GitLab contributions:
-
-```bash
-node cli/cli.js --scenario full --game pacman --gameTheme github-dark --output full.svg
-```
-
-Scenarios are built into the library and selected by name. Passing `--scenario` without a value uses the `random`
-scenario. Available scenarios: `full`, `empty`, `random`, `checkerboard`, `gradient`, and `streaks`.
 
 ## Integrate into Your GitHub Profile
 

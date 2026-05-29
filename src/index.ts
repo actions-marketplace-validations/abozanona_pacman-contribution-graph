@@ -4,6 +4,6 @@ export { GalagaRenderer } from './galaga/index';
 export { PacmanRenderer, PlayerStyle } from './pacman/index';
 export { PuzzleBobbleRenderer } from './puzzle-bobble/index';
 export { ARCADE_GAMES, ArcadeRenderer, GAME_REGISTRY } from './shared/arcade-renderer';
-export { generateScenarioContributions, isScenarioName, resolveScenarioName, SCENARIOS } from './shared/scenarios';
+export { generateScenarioContributions, isScenarioName, resolveScenarioName, SCENARIOS } from './shared/providers/scenarios';
 export type { ArcadeConfig, GameType } from './shared/arcade-renderer';
-export type { ScenarioName } from './shared/scenarios';
+export type { ScenarioName } from './shared/providers/scenarios';

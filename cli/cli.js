@@ -4,7 +4,7 @@
 import fs from 'fs';
 import { hideBin } from 'yargs/helpers';
 import yargs from 'yargs/yargs';
-import { ARCADE_GAMES, ArcadeRenderer, generateScenarioContributions, SCENARIOS } from '../dist/pacman-contribution-graph.min.js';
+import { ARCADE_GAMES, ArcadeRenderer, SCENARIOS } from '../dist/pacman-contribution-graph.min.js';
 
 const argv = yargs(hideBin(process.argv))
 	.option('game', {
@@ -55,27 +55,25 @@ const argv = yargs(hideBin(process.argv))
 	})
 	.help().argv;
 
-let scenario = { name: undefined, contributions: undefined };
-
-if (argv.scenario !== undefined) {
-	try {
-		scenario = generateScenarioContributions(argv.scenario);
-	} catch (error) {
-		console.error(error instanceof Error ? error.message : String(error));
-		process.exit(1);
-	}
-}
+const hasScenario = argv.scenario !== undefined;
+const scenarioName = argv.scenario === '' || argv.scenario === undefined ? 'random' : argv.scenario;
 
 const renderer = new ArcadeRenderer({
 	game: argv.game,
 	platform: argv.platform ?? 'github',
-	username: argv.username ?? `scenario-${scenario.name}`,
+	username: argv.username ?? (hasScenario ? `scenario-${scenarioName}` : ''),
 	gameTheme: argv.gameTheme ?? (argv.platform === 'gitlab' ? 'gitlab' : 'github'),
-	contributions: scenario.contributions,
-	includeFutureContributions: argv.scenario !== undefined,
+	scenario: argv.scenario,
+	includeFutureContributions: hasScenario,
 	svgCallback: (svg) => {
 		fs.writeFileSync(argv.output, svg);
 		console.log(`SVG saved to ${argv.output}`);
 	}
 });
-renderer.start();
+
+try {
+	await renderer.start();
+} catch (error) {
+	console.error(error instanceof Error ? error.message : String(error));
+	process.exit(1);
+}

@@ -1,4 +1,4 @@
-import type { Contribution, ContributionLevel } from './types';
+import type { Contribution, ContributionLevel } from '../types';
 
 export const SCENARIO_WEEKS = 53;
 export const SCENARIO_DAYS = 7;

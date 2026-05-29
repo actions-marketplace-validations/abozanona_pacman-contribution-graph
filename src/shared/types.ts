@@ -1,3 +1,5 @@
+import type { ScenarioName } from './providers/scenarios';
+
 export type ContributionLevel = 'NONE' | 'FIRST_QUARTILE' | 'SECOND_QUARTILE' | 'THIRD_QUARTILE' | 'FOURTH_QUARTILE';
 
 export interface Contribution {
@@ -37,6 +39,7 @@ export interface BaseConfig {
 	platform: 'github' | 'gitlab';
 	username: string;
 	contributions?: Contribution[];
+	scenario?: ScenarioName;
 	svgCallback: (blobUrl: string) => void;
 	gameOverCallback: () => void;
 	gameTheme: ThemeKeys;

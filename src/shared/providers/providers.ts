@@ -1,10 +1,15 @@
 import { fetchGithubContributions } from './github-contributions';
 import { fetchGitlabContributions } from './gitlab-contributions';
+import { generateScenarioContributions } from './scenarios';
 import type { BaseStore, Contribution } from '../types';
 
 const fetchContributions = async (store: BaseStore): Promise<Contribution[]> => {
 	if (store.config.contributions) {
 		return store.config.contributions;
+	}
+
+	if (store.config.scenario !== undefined) {
+		return generateScenarioContributions(store.config.scenario).contributions;
 	}
 
 	switch (store.config.platform) {
@@ -20,5 +25,6 @@ const fetchContributions = async (store: BaseStore): Promise<Contribution[]> => 
 export const Providers = {
 	fetchContributions,
 	fetchGithubContributions,
-	fetchGitlabContributions
+	fetchGitlabContributions,
+	generateScenarioContributions
 };
