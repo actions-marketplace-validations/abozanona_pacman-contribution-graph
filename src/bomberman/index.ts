@@ -27,17 +27,7 @@ export class BombermanRenderer {
 
 		this.store = JSON.parse(JSON.stringify(Store));
 		this.store.config = { ...defaultConfig, ...this.conf };
-
-		switch (this.store.config.platform) {
-			case 'gitlab':
-				this.store.contributions = await Providers.fetchGitlabContributions(this.store);
-				break;
-			case 'github':
-				this.store.contributions = await Providers.fetchGithubContributions(this.store);
-				break;
-			default:
-				throw new Error(`Unsupported platform: ${this.store.config.platform}`);
-		}
+		this.store.contributions = await Providers.fetchContributions(this.store);
 
 		Utils.buildGrid(this.store);
 		Utils.buildMonthLabels(this.store);

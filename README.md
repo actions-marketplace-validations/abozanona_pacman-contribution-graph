@@ -125,6 +125,7 @@ Here's how to set up and run the games:
     - `username`: Your GitHub or GitLab username.
     - `platform`: Specify `'github'` or `'gitlab'`.
     - `gameTheme`: Choose between `'github'`, `'github-dark'`, `'gitlab'`, or `'gitlab-dark'`.
+    - `scenario`: Use a predefined contribution scenario instead of fetching platform contributions. Available scenarios: `full`, `empty`, `random`, `checkerboard`, `gradient`, `streaks`.
     - `playerStyle` _(Pac-Man only)_: `PlayerStyle.OPPORTUNISTIC` (default), `PlayerStyle.CONSERVATIVE`, or `PlayerStyle.AGGRESSIVE`.
     - `svgCallback`: Called with the finished SVG string once generation is complete.
     - `gameOverCallback`: Called when the game finishes.

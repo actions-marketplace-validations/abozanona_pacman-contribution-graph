@@ -33,9 +33,17 @@ export interface AnimationData {
 	values: string;
 }
 
+export const PLATFORMS = ['github', 'gitlab', 'scenario'] as const;
+export type Platform = (typeof PLATFORMS)[number];
+
+export const SCENARIOS = ['full', 'empty', 'random', 'checkerboard', 'gradient', 'streaks'] as const;
+export type Scenario = (typeof SCENARIOS)[number];
+
 export interface BaseConfig {
-	platform: 'github' | 'gitlab';
+	platform: Platform;
 	username: string;
+	contributions?: Contribution[];
+	scenario?: Scenario;
 	svgCallback: (blobUrl: string) => void;
 	gameOverCallback: () => void;
 	gameTheme: ThemeKeys;

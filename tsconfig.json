@@ -6,7 +6,7 @@
 		"strict": true,
 		"esModuleInterop": true,
 		"sourceMap": true,
-		"lib": ["ES2017", "DOM"]
+		"lib": ["ES2019", "DOM"]
 	},
 	"include": ["src"]
 }

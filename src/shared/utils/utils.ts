@@ -6,6 +6,23 @@ const weeksBetween = (start: Date, end: Date) => Math.floor((end.getTime() - sta
 
 const truncateToUTCDate = (d: Date) => new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()));
 
+const getLatestContributionDate = (store: BaseStore) =>
+	store.contributions.reduce<Date | undefined>((latestDate, contribution) => {
+		const contributionDate = truncateToUTCDate(new Date(contribution.date));
+		return latestDate === undefined || contributionDate > latestDate ? contributionDate : latestDate;
+	}, undefined);
+
+const getGridEndDate = (store: BaseStore) => {
+	const endDate = truncateToUTCDate(new Date());
+	const latestContributionDate = getLatestContributionDate(store);
+
+	if (latestContributionDate && latestContributionDate > endDate) {
+		return latestContributionDate;
+	}
+
+	return endDate;
+};
+
 /* ───────────────────────── Theme helpers ────────────────────── */
 export const getCurrentTheme = (store: BaseStore): GameTheme => GAME_THEMES[store.config.gameTheme] ?? GAME_THEMES['github'];
 
@@ -36,7 +53,7 @@ export const calculateContributionLevel = (contribution: number, maxContribution
 };
 
 export const buildGrid = (store: BaseStore) => {
-	const endDate = truncateToUTCDate(new Date());
+	const endDate = getGridEndDate(store);
 	const startDate = new Date(endDate);
 	startDate.setUTCDate(endDate.getUTCDate() - 365);
 	startDate.setUTCDate(startDate.getUTCDate() - startDate.getUTCDay());
@@ -71,7 +88,7 @@ export const buildGrid = (store: BaseStore) => {
 };
 
 export const buildMonthLabels = (store: BaseStore) => {
-	const endDate = truncateToUTCDate(new Date());
+	const endDate = getGridEndDate(store);
 	const startDate = new Date(endDate);
 	startDate.setUTCDate(endDate.getUTCDate() - 365);
 	startDate.setUTCDate(startDate.getUTCDate() - startDate.getUTCDay());

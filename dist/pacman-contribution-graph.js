@@ -1,10 +1,10 @@
 /******/ var __webpack_modules__ = ({
 
-/***/ "./src/bomberman/core/ai.ts":
+/***/ "./src/bomberman/core/ai.ts"
 /*!**********************************!*\
   !*** ./src/bomberman/core/ai.ts ***!
   \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -112,13 +112,13 @@ const movePlayerTo = (player, next) => {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/bomberman/core/constants.ts":
+/***/ "./src/bomberman/core/constants.ts"
 /*!*****************************************!*\
   !*** ./src/bomberman/core/constants.ts ***!
   \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -559,13 +559,13 @@ const BOMBERMAN_SPRITE_SETS = {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/bomberman/core/game.ts":
+/***/ "./src/bomberman/core/game.ts"
 /*!************************************!*\
   !*** ./src/bomberman/core/game.ts ***!
   \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -672,13 +672,13 @@ const Game = {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/bomberman/core/pathfinding.ts":
+/***/ "./src/bomberman/core/pathfinding.ts"
 /*!*******************************************!*\
   !*** ./src/bomberman/core/pathfinding.ts ***!
   \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -883,13 +883,13 @@ const canEscapeAfterPlantingBomb = (store, player) => {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/bomberman/core/rules.ts":
+/***/ "./src/bomberman/core/rules.ts"
 /*!*************************************!*\
   !*** ./src/bomberman/core/rules.ts ***!
   \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1081,13 +1081,13 @@ const updateExplosions = (store) => {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/bomberman/core/store.ts":
+/***/ "./src/bomberman/core/store.ts"
 /*!*************************************!*\
   !*** ./src/bomberman/core/store.ts ***!
   \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1111,13 +1111,13 @@ const Store = {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/bomberman/index.ts":
+/***/ "./src/bomberman/index.ts"
 /*!********************************!*\
   !*** ./src/bomberman/index.ts ***!
   \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1157,16 +1157,7 @@ class BombermanRenderer {
             };
             this.store = JSON.parse(JSON.stringify(_core_store__WEBPACK_IMPORTED_MODULE_3__.Store));
             this.store.config = Object.assign(Object.assign({}, defaultConfig), this.conf);
-            switch (this.store.config.platform) {
-                case 'gitlab':
-                    this.store.contributions = yield _shared_providers_providers__WEBPACK_IMPORTED_MODULE_0__.Providers.fetchGitlabContributions(this.store);
-                    break;
-                case 'github':
-                    this.store.contributions = yield _shared_providers_providers__WEBPACK_IMPORTED_MODULE_0__.Providers.fetchGithubContributions(this.store);
-                    break;
-                default:
-                    throw new Error(`Unsupported platform: ${this.store.config.platform}`);
-            }
+            this.store.contributions = yield _shared_providers_providers__WEBPACK_IMPORTED_MODULE_0__.Providers.fetchContributions(this.store);
             _shared_utils_utils__WEBPACK_IMPORTED_MODULE_1__.Utils.buildGrid(this.store);
             _shared_utils_utils__WEBPACK_IMPORTED_MODULE_1__.Utils.buildMonthLabels(this.store);
             yield _core_game__WEBPACK_IMPORTED_MODULE_2__.Game.startGame(this.store);
@@ -1179,13 +1170,13 @@ class BombermanRenderer {
 }
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/bomberman/renderers/animation.ts":
+/***/ "./src/bomberman/renderers/animation.ts"
 /*!**********************************************!*\
   !*** ./src/bomberman/renderers/animation.ts ***!
   \**********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1263,13 +1254,13 @@ const appendFinalKeyframe = (keyTimes, values) => {
 const frameToKeyTime = (frameIndex, totalFrames) => Number((Math.min(frameIndex, Math.max(totalFrames - 1, 1)) / Math.max(totalFrames - 1, 1)).toFixed(_core_constants__WEBPACK_IMPORTED_MODULE_0__.BOMBERMAN_SVG.PRECISION));
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/bomberman/renderers/svg.ts":
+/***/ "./src/bomberman/renderers/svg.ts"
 /*!****************************************!*\
   !*** ./src/bomberman/renderers/svg.ts ***!
   \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1627,13 +1618,13 @@ const Renderer = {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/breakout/core/constants.ts":
+/***/ "./src/breakout/core/constants.ts"
 /*!****************************************!*\
   !*** ./src/breakout/core/constants.ts ***!
   \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1691,13 +1682,13 @@ const PADDLE_COLOR = '#ffffff';
 const BALL_SHADOW_COLOR = '#aaaaaa';
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/breakout/core/game.ts":
+/***/ "./src/breakout/core/game.ts"
 /*!***********************************!*\
   !*** ./src/breakout/core/game.ts ***!
   \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1976,13 +1967,13 @@ const BreakoutGame = {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/breakout/core/store.ts":
+/***/ "./src/breakout/core/store.ts"
 /*!************************************!*\
   !*** ./src/breakout/core/store.ts ***!
   \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -2005,13 +1996,13 @@ const BreakoutStore = {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/breakout/index.ts":
+/***/ "./src/breakout/index.ts"
 /*!*******************************!*\
   !*** ./src/breakout/index.ts ***!
   \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -2051,16 +2042,7 @@ class BreakoutRenderer {
             };
             this.store = JSON.parse(JSON.stringify(_core_store__WEBPACK_IMPORTED_MODULE_3__.BreakoutStore));
             this.store.config = Object.assign(Object.assign({}, defaultConfig), this.conf);
-            switch (this.store.config.platform) {
-                case 'gitlab':
-                    this.store.contributions = yield _shared_providers_providers__WEBPACK_IMPORTED_MODULE_0__.Providers.fetchGitlabContributions(this.store);
-                    break;
-                case 'github':
-                    this.store.contributions = yield _shared_providers_providers__WEBPACK_IMPORTED_MODULE_0__.Providers.fetchGithubContributions(this.store);
-                    break;
-                default:
-                    throw new Error(`Unsupported platform: ${this.store.config.platform}`);
-            }
+            this.store.contributions = yield _shared_providers_providers__WEBPACK_IMPORTED_MODULE_0__.Providers.fetchContributions(this.store);
             _shared_utils_utils__WEBPACK_IMPORTED_MODULE_1__.Utils.buildGrid(this.store);
             _shared_utils_utils__WEBPACK_IMPORTED_MODULE_1__.Utils.buildMonthLabels(this.store);
             yield _core_game__WEBPACK_IMPORTED_MODULE_2__.BreakoutGame.startGame(this.store);
@@ -2073,13 +2055,13 @@ class BreakoutRenderer {
 }
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/breakout/renderers/svg.ts":
+/***/ "./src/breakout/renderers/svg.ts"
 /*!***************************************!*\
   !*** ./src/breakout/renderers/svg.ts ***!
   \***************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -2240,13 +2222,13 @@ const buildChangingValuesAnimation = (store, values) => {
 const BreakoutSVG = { generateAnimatedSVG };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/galaga/core/constants.ts":
+/***/ "./src/galaga/core/constants.ts"
 /*!**************************************!*\
   !*** ./src/galaga/core/constants.ts ***!
   \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -2300,13 +2282,13 @@ const BULLET_IMAGE_DATA = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAC
 const SHIP_IMAGE_DATA = 'data:image/png;base64,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';
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/galaga/core/game.ts":
+/***/ "./src/galaga/core/game.ts"
 /*!*********************************!*\
   !*** ./src/galaga/core/game.ts ***!
   \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -2506,13 +2488,13 @@ const updateGame = (store) => {
 const GalagaGame = { startGame, stopGame };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/galaga/core/store.ts":
+/***/ "./src/galaga/core/store.ts"
 /*!**********************************!*\
   !*** ./src/galaga/core/store.ts ***!
   \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -2537,13 +2519,13 @@ const GalagaStore = {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/galaga/index.ts":
+/***/ "./src/galaga/index.ts"
 /*!*****************************!*\
   !*** ./src/galaga/index.ts ***!
   \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -2583,16 +2565,7 @@ class GalagaRenderer {
             };
             this.store = JSON.parse(JSON.stringify(_core_store__WEBPACK_IMPORTED_MODULE_3__.GalagaStore));
             this.store.config = Object.assign(Object.assign({}, defaultConfig), this.conf);
-            switch (this.store.config.platform) {
-                case 'gitlab':
-                    this.store.contributions = yield _shared_providers_providers__WEBPACK_IMPORTED_MODULE_0__.Providers.fetchGitlabContributions(this.store);
-                    break;
-                case 'github':
-                    this.store.contributions = yield _shared_providers_providers__WEBPACK_IMPORTED_MODULE_0__.Providers.fetchGithubContributions(this.store);
-                    break;
-                default:
-                    throw new Error(`Unsupported platform: ${this.store.config.platform}`);
-            }
+            this.store.contributions = yield _shared_providers_providers__WEBPACK_IMPORTED_MODULE_0__.Providers.fetchContributions(this.store);
             _shared_utils_utils__WEBPACK_IMPORTED_MODULE_1__.Utils.buildGrid(this.store);
             _shared_utils_utils__WEBPACK_IMPORTED_MODULE_1__.Utils.buildMonthLabels(this.store);
             yield _core_game__WEBPACK_IMPORTED_MODULE_2__.GalagaGame.startGame(this.store);
@@ -2605,13 +2578,13 @@ class GalagaRenderer {
 }
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/galaga/renderers/svg.ts":
+/***/ "./src/galaga/renderers/svg.ts"
 /*!*************************************!*\
   !*** ./src/galaga/renderers/svg.ts ***!
   \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -2900,13 +2873,13 @@ const buildChangingValuesAnimation = (store, values) => {
 const GalagaSVG = { generateAnimatedSVG };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/pacman/core/constants.ts":
+/***/ "./src/pacman/core/constants.ts"
 /*!**************************************!*\
   !*** ./src/pacman/core/constants.ts ***!
   \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -3010,13 +2983,13 @@ const hasWall = (x, y, direction) => {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/pacman/core/game.ts":
+/***/ "./src/pacman/core/game.ts"
 /*!*********************************!*\
   !*** ./src/pacman/core/game.ts ***!
   \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -3129,6 +3102,7 @@ const startGame = (store) => __awaiter(void 0, void 0, void 0, function* () {
     store.aliveSteps = 0;
     store.gameHistory = [];
     store.ghosts.forEach((g) => (g.scared = false));
+    _movement_ghosts_movement__WEBPACK_IMPORTED_MODULE_1__.GhostsMovement.resetGameMode();
     store.grid = _shared_utils_utils__WEBPACK_IMPORTED_MODULE_0__.Utils.createGridFromData(store);
     const remainingCells = () => store.grid.some((row) => row.some((cell) => cell.commitsCount > 0));
     if (remainingCells()) {
@@ -3278,13 +3252,13 @@ const Game = {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/pacman/core/store.ts":
+/***/ "./src/pacman/core/store.ts"
 /*!**********************************!*\
   !*** ./src/pacman/core/store.ts ***!
   \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -3316,13 +3290,13 @@ const Store = {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/pacman/index.ts":
+/***/ "./src/pacman/index.ts"
 /*!*****************************!*\
   !*** ./src/pacman/index.ts ***!
   \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -3369,16 +3343,7 @@ class PacmanRenderer {
             };
             this.store = JSON.parse(JSON.stringify(_core_store__WEBPACK_IMPORTED_MODULE_3__.Store));
             this.store.config = Object.assign(Object.assign({}, defaultConfig), this.conf);
-            switch (this.store.config.platform) {
-                case 'gitlab':
-                    this.store.contributions = yield _shared_providers_providers__WEBPACK_IMPORTED_MODULE_0__.Providers.fetchGitlabContributions(this.store);
-                    break;
-                case 'github':
-                    this.store.contributions = yield _shared_providers_providers__WEBPACK_IMPORTED_MODULE_0__.Providers.fetchGithubContributions(this.store);
-                    break;
-                default:
-                    throw new Error(`Unsupported platform: ${this.store.config.platform}`);
-            }
+            this.store.contributions = yield _shared_providers_providers__WEBPACK_IMPORTED_MODULE_0__.Providers.fetchContributions(this.store);
             _utils_grid__WEBPACK_IMPORTED_MODULE_5__.Grid.buildWalls();
             _shared_utils_utils__WEBPACK_IMPORTED_MODULE_1__.Utils.buildGrid(this.store);
             _shared_utils_utils__WEBPACK_IMPORTED_MODULE_1__.Utils.buildMonthLabels(this.store);
@@ -3392,13 +3357,13 @@ class PacmanRenderer {
 }
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/pacman/movement/ghosts-movement.ts":
+/***/ "./src/pacman/movement/ghosts-movement.ts"
 /*!************************************************!*\
   !*** ./src/pacman/movement/ghosts-movement.ts ***!
   \************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -3421,6 +3386,11 @@ const SCATTER_CORNERS = {
 let currentMode = 'scatter';
 let modeTimer = 0;
 let dotsRemaining = 0;
+const resetGameMode = () => {
+    currentMode = 'scatter';
+    modeTimer = 0;
+    dotsRemaining = 0;
+};
 const moveGhosts = (store) => {
     // Calculate the total number of points remaining to define the behavior
     dotsRemaining = countRemainingDots(store);
@@ -3960,17 +3930,18 @@ const getRandomDestination = (x, y) => {
     };
 };
 const GhostsMovement = {
-    moveGhosts
+    moveGhosts,
+    resetGameMode
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/pacman/movement/movement-utils.ts":
+/***/ "./src/pacman/movement/movement-utils.ts"
 /*!***********************************************!*\
   !*** ./src/pacman/movement/movement-utils.ts ***!
   \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -4037,13 +4008,13 @@ const MovementUtils = {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/pacman/movement/pacman-movement.ts":
+/***/ "./src/pacman/movement/pacman-movement.ts"
 /*!************************************************!*\
   !*** ./src/pacman/movement/pacman-movement.ts ***!
   \************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -4315,13 +4286,13 @@ const PacmanMovement = {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/pacman/renderers/renderer-units.ts":
+/***/ "./src/pacman/renderers/renderer-units.ts"
 /*!************************************************!*\
   !*** ./src/pacman/renderers/renderer-units.ts ***!
   \************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -4345,13 +4316,13 @@ const RendererUnits = {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/pacman/renderers/svg.ts":
+/***/ "./src/pacman/renderers/svg.ts"
 /*!*************************************!*\
   !*** ./src/pacman/renderers/svg.ts ***!
   \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -4731,13 +4702,13 @@ const SVG = {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/pacman/types.ts":
+/***/ "./src/pacman/types.ts"
 /*!*****************************!*\
   !*** ./src/pacman/types.ts ***!
   \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -4751,13 +4722,13 @@ var PlayerStyle;
 })(PlayerStyle || (PlayerStyle = {}));
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/pacman/utils/grid.ts":
+/***/ "./src/pacman/utils/grid.ts"
 /*!**********************************!*\
   !*** ./src/pacman/utils/grid.ts ***!
   \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -4883,13 +4854,13 @@ const Grid = {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/puzzle-bobble/core/constants.ts":
+/***/ "./src/puzzle-bobble/core/constants.ts"
 /*!*********************************************!*\
   !*** ./src/puzzle-bobble/core/constants.ts ***!
   \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -4954,13 +4925,13 @@ const PB_COLORS = [
 ];
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/puzzle-bobble/core/game.ts":
+/***/ "./src/puzzle-bobble/core/game.ts"
 /*!****************************************!*\
   !*** ./src/puzzle-bobble/core/game.ts ***!
   \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -5503,13 +5474,13 @@ const updateGame = (store) => {
 const PuzzleBobbleGame = { startGame, stopGame };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/puzzle-bobble/core/store.ts":
+/***/ "./src/puzzle-bobble/core/store.ts"
 /*!*****************************************!*\
   !*** ./src/puzzle-bobble/core/store.ts ***!
   \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -5535,13 +5506,13 @@ const PuzzleBobbleStore = {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/puzzle-bobble/index.ts":
+/***/ "./src/puzzle-bobble/index.ts"
 /*!************************************!*\
   !*** ./src/puzzle-bobble/index.ts ***!
   \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -5581,16 +5552,7 @@ class PuzzleBobbleRenderer {
             };
             this.store = JSON.parse(JSON.stringify(_core_store__WEBPACK_IMPORTED_MODULE_3__.PuzzleBobbleStore));
             this.store.config = Object.assign(Object.assign({}, defaultConfig), this.conf);
-            switch (this.store.config.platform) {
-                case 'gitlab':
-                    this.store.contributions = yield _shared_providers_providers__WEBPACK_IMPORTED_MODULE_0__.Providers.fetchGitlabContributions(this.store);
-                    break;
-                case 'github':
-                    this.store.contributions = yield _shared_providers_providers__WEBPACK_IMPORTED_MODULE_0__.Providers.fetchGithubContributions(this.store);
-                    break;
-                default:
-                    throw new Error(`Unsupported platform: ${this.store.config.platform}`);
-            }
+            this.store.contributions = yield _shared_providers_providers__WEBPACK_IMPORTED_MODULE_0__.Providers.fetchContributions(this.store);
             _shared_utils_utils__WEBPACK_IMPORTED_MODULE_1__.Utils.buildGrid(this.store);
             _shared_utils_utils__WEBPACK_IMPORTED_MODULE_1__.Utils.buildMonthLabels(this.store);
             yield _core_game__WEBPACK_IMPORTED_MODULE_2__.PuzzleBobbleGame.startGame(this.store);
@@ -5603,13 +5565,13 @@ class PuzzleBobbleRenderer {
 }
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/puzzle-bobble/renderers/svg.ts":
+/***/ "./src/puzzle-bobble/renderers/svg.ts"
 /*!********************************************!*\
   !*** ./src/puzzle-bobble/renderers/svg.ts ***!
   \********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -5883,13 +5845,13 @@ const generateAnimatedSVG = (store) => {
 const PuzzleBobblesVG = { generateAnimatedSVG };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/shared/arcade-renderer.ts":
+/***/ "./src/shared/arcade-renderer.ts"
 /*!***************************************!*\
   !*** ./src/shared/arcade-renderer.ts ***!
   \***************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -5961,13 +5923,13 @@ class ArcadeRenderer {
 }
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/shared/constants.ts":
+/***/ "./src/shared/constants.ts"
 /*!*********************************!*\
   !*** ./src/shared/constants.ts ***!
   \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -6021,13 +5983,13 @@ const GAME_THEMES = {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/shared/providers/github-contributions.ts":
+/***/ "./src/shared/providers/github-contributions.ts"
 /*!******************************************************!*\
   !*** ./src/shared/providers/github-contributions.ts ***!
   \******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -6149,13 +6111,13 @@ const fetchGithubContributionsGraphQL = (store) => __awaiter(void 0, void 0, voi
 });
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/shared/providers/gitlab-contributions.ts":
+/***/ "./src/shared/providers/gitlab-contributions.ts"
 /*!******************************************************!*\
   !*** ./src/shared/providers/gitlab-contributions.ts ***!
   \******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -6195,13 +6157,13 @@ const fetchGitlabContributions = (store) => __awaiter(void 0, void 0, void 0, fu
 });
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/shared/providers/providers.ts":
+/***/ "./src/shared/providers/providers.ts"
 /*!*******************************************!*\
   !*** ./src/shared/providers/providers.ts ***!
   \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -6209,21 +6171,242 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _github_contributions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./github-contributions */ "./src/shared/providers/github-contributions.ts");
 /* harmony import */ var _gitlab_contributions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./gitlab-contributions */ "./src/shared/providers/gitlab-contributions.ts");
-
-
-const Providers = {
-    fetchGithubContributions: _github_contributions__WEBPACK_IMPORTED_MODULE_0__.fetchGithubContributions,
-    fetchGitlabContributions: _gitlab_contributions__WEBPACK_IMPORTED_MODULE_1__.fetchGitlabContributions
+/* harmony import */ var _scenarios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scenarios */ "./src/shared/providers/scenarios.ts");
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
 };
 
 
-/***/ }),
 
-/***/ "./src/shared/utils/utils.ts":
+const fetchScenarioContributions = (store) => __awaiter(void 0, void 0, void 0, function* () { return (0,_scenarios__WEBPACK_IMPORTED_MODULE_2__.generateScenarioContributions)(store.config.scenario).contributions; });
+const fetchContributions = (store) => __awaiter(void 0, void 0, void 0, function* () {
+    if (store.config.contributions) {
+        return store.config.contributions;
+    }
+    switch (store.config.platform) {
+        case 'gitlab':
+            return yield (0,_gitlab_contributions__WEBPACK_IMPORTED_MODULE_1__.fetchGitlabContributions)(store);
+        case 'github':
+            return yield (0,_github_contributions__WEBPACK_IMPORTED_MODULE_0__.fetchGithubContributions)(store);
+        case 'scenario':
+            return yield fetchScenarioContributions(store);
+        default:
+            throw new Error(`Unsupported platform: ${store.config.platform}`);
+    }
+});
+const Providers = {
+    fetchContributions,
+    fetchGithubContributions: _github_contributions__WEBPACK_IMPORTED_MODULE_0__.fetchGithubContributions,
+    fetchGitlabContributions: _gitlab_contributions__WEBPACK_IMPORTED_MODULE_1__.fetchGitlabContributions,
+    fetchScenarioContributions,
+    generateScenarioContributions: _scenarios__WEBPACK_IMPORTED_MODULE_2__.generateScenarioContributions
+};
+
+
+/***/ },
+
+/***/ "./src/shared/providers/scenarios.ts"
+/*!*******************************************!*\
+  !*** ./src/shared/providers/scenarios.ts ***!
+  \*******************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   SCENARIO_DAYS: () => (/* binding */ SCENARIO_DAYS),
+/* harmony export */   SCENARIO_WEEKS: () => (/* binding */ SCENARIO_WEEKS),
+/* harmony export */   generateScenarioContributions: () => (/* binding */ generateScenarioContributions),
+/* harmony export */   isScenarioName: () => (/* binding */ isScenarioName),
+/* harmony export */   resolveScenarioName: () => (/* binding */ resolveScenarioName)
+/* harmony export */ });
+/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../types */ "./src/shared/types.ts");
+
+const SCENARIO_WEEKS = 53;
+const SCENARIO_DAYS = 7;
+const isScenarioName = (value) => _types__WEBPACK_IMPORTED_MODULE_0__.SCENARIOS.includes(value);
+const resolveScenarioName = (scenarioArg) => {
+    const scenarioName = scenarioArg === '' || scenarioArg === undefined ? 'random' : scenarioArg;
+    if (!isScenarioName(scenarioName)) {
+        throw new Error(`Unknown scenario "${scenarioName}". Available scenarios: ${_types__WEBPACK_IMPORTED_MODULE_0__.SCENARIOS.join(', ')}`);
+    }
+    return scenarioName;
+};
+const generateScenarioContributions = (scenarioArg) => {
+    const name = resolveScenarioName(scenarioArg);
+    return {
+        name,
+        contributions: countsToContributions(createScenarioCounts(name))
+    };
+};
+const createScenarioCounts = (name) => {
+    switch (name) {
+        case 'empty':
+            return createEmptyCounts();
+        case 'full':
+            return createFullCounts(8);
+        case 'checkerboard':
+            return createCheckerboardCounts({ low: 0, high: 10 });
+        case 'gradient':
+            return createGradientCounts({ min: 0, max: 12 });
+        case 'streaks':
+            return createStreakCounts();
+        case 'random':
+        default:
+            return createRandomCounts({ density: 0.5, min: 1, max: 8 });
+    }
+};
+const createEmptyCounts = () => Array.from({ length: SCENARIO_WEEKS }, () => Array(SCENARIO_DAYS).fill(0));
+const createFullCounts = (count) => Array.from({ length: SCENARIO_WEEKS }, () => Array(SCENARIO_DAYS).fill(toNonNegativeInteger(count)));
+const createRandomCounts = ({ density, min, max }) => {
+    const clampedDensity = clampNumber(density, 0, 1);
+    const minimum = toNonNegativeInteger(min);
+    const maximum = Math.max(minimum, toNonNegativeInteger(max));
+    const contributionRange = maximum - minimum + 1;
+    return Array.from({ length: SCENARIO_WEEKS }, (_, week) => Array.from({ length: SCENARIO_DAYS }, (_, day) => {
+        const value = Math.random();
+        if (value >= clampedDensity)
+            return 0;
+        return minimum + Math.floor(Math.random() * contributionRange);
+    }));
+};
+const createCheckerboardCounts = ({ low, high }) => {
+    const lowCount = toNonNegativeInteger(low);
+    const highCount = toNonNegativeInteger(high);
+    return Array.from({ length: SCENARIO_WEEKS }, (_, week) => Array.from({ length: SCENARIO_DAYS }, (_, day) => ((week + day) % 2 === 0 ? highCount : lowCount)));
+};
+const createGradientCounts = ({ min, max }) => {
+    const minimum = toNonNegativeInteger(min);
+    const maximum = Math.max(minimum, toNonNegativeInteger(max));
+    return Array.from({ length: SCENARIO_WEEKS }, (_, week) => Array.from({ length: SCENARIO_DAYS }, (_, day) => {
+        const weekRatio = week / (SCENARIO_WEEKS - 1);
+        const dayRatio = day / (SCENARIO_DAYS - 1);
+        return Math.round(minimum + (maximum - minimum) * (weekRatio * 0.75 + dayRatio * 0.25));
+    }));
+};
+const createStreakCounts = () => {
+    const counts = createEmptyCounts();
+    addHorizontalStreak(counts, { day: 1, startWeek: 2, length: 10, count: 6 });
+    addHorizontalStreak(counts, { day: 3, startWeek: 18, length: 12, count: 10 });
+    addHorizontalStreak(counts, { day: 5, startWeek: 38, length: 10, count: 14 });
+    addHorizontalStreak(counts, { day: 0, startWeek: 43, length: 6, count: 4 });
+    addHorizontalStreak(counts, { day: 6, startWeek: 43, length: 6, count: 4 });
+    addVerticalBlock(counts, { startWeek: 8, length: 2, startDay: 1, endDay: 5, count: 8 });
+    addVerticalBlock(counts, { startWeek: 27, length: 1, startDay: 0, endDay: 6, count: 12 });
+    addVerticalBlock(counts, { startWeek: 49, length: 1, startDay: 2, endDay: 6, count: 16 });
+    addDiagonalStreak(counts, { startWeek: 5, startDay: 0, length: 9, count: 7 });
+    addDiagonalStreak(counts, { startWeek: 30, startDay: 6, length: 8, count: 11, direction: -1 });
+    return counts;
+};
+const addHorizontalStreak = (counts, { day, startWeek, length, count }) => {
+    const normalizedDay = clampNumber(toNonNegativeInteger(day), 0, SCENARIO_DAYS - 1);
+    const normalizedStartWeek = clampNumber(toNonNegativeInteger(startWeek), 0, SCENARIO_WEEKS - 1);
+    const normalizedLength = toNonNegativeInteger(length);
+    const normalizedCount = toNonNegativeInteger(count);
+    for (let week = normalizedStartWeek; week < Math.min(SCENARIO_WEEKS, normalizedStartWeek + normalizedLength); week++) {
+        counts[week][normalizedDay] = Math.max(counts[week][normalizedDay], normalizedCount);
+    }
+};
+const addVerticalBlock = (counts, { startWeek, length, startDay, endDay, count }) => {
+    const normalizedStartWeek = clampNumber(toNonNegativeInteger(startWeek), 0, SCENARIO_WEEKS - 1);
+    const normalizedLength = toNonNegativeInteger(length);
+    const normalizedStartDay = clampNumber(toNonNegativeInteger(startDay), 0, SCENARIO_DAYS - 1);
+    const normalizedEndDay = clampNumber(toNonNegativeInteger(endDay), normalizedStartDay, SCENARIO_DAYS - 1);
+    const normalizedCount = toNonNegativeInteger(count);
+    for (let week = normalizedStartWeek; week < Math.min(SCENARIO_WEEKS, normalizedStartWeek + normalizedLength); week++) {
+        for (let day = normalizedStartDay; day <= normalizedEndDay; day++) {
+            counts[week][day] = Math.max(counts[week][day], normalizedCount);
+        }
+    }
+};
+const addDiagonalStreak = (counts, { startWeek, startDay, length, count, direction = 1 }) => {
+    const normalizedStartWeek = clampNumber(toNonNegativeInteger(startWeek), 0, SCENARIO_WEEKS - 1);
+    const normalizedStartDay = clampNumber(toNonNegativeInteger(startDay), 0, SCENARIO_DAYS - 1);
+    const normalizedLength = toNonNegativeInteger(length);
+    const normalizedCount = toNonNegativeInteger(count);
+    for (let offset = 0; offset < normalizedLength; offset++) {
+        const week = normalizedStartWeek + offset;
+        const day = normalizedStartDay + offset * direction;
+        if (week >= SCENARIO_WEEKS || day < 0 || day >= SCENARIO_DAYS) {
+            continue;
+        }
+        counts[week][day] = Math.max(counts[week][day], normalizedCount);
+    }
+};
+const countsToContributions = (counts) => {
+    const endDate = truncateToUTCDate(new Date());
+    endDate.setUTCDate(endDate.getUTCDate() + (SCENARIO_DAYS - 1 - endDate.getUTCDay()));
+    const startDate = new Date(endDate);
+    startDate.setUTCDate(endDate.getUTCDate() - 365);
+    startDate.setUTCDate(startDate.getUTCDate() - startDate.getUTCDay());
+    const maxCount = Math.max(0, ...counts.flat());
+    const contributions = [];
+    for (let week = 0; week < SCENARIO_WEEKS; week++) {
+        for (let day = 0; day < SCENARIO_DAYS; day++) {
+            const date = new Date(startDate);
+            date.setUTCDate(startDate.getUTCDate() + week * SCENARIO_DAYS + day);
+            const count = counts[week][day];
+            contributions.push({
+                date,
+                count,
+                color: '',
+                level: countToLevel(count, maxCount)
+            });
+        }
+    }
+    return contributions;
+};
+const countToLevel = (count, maxCount) => {
+    if (count === 0 || maxCount === 0)
+        return 'NONE';
+    const quartile = maxCount / 4;
+    if (count < quartile)
+        return 'FIRST_QUARTILE';
+    if (count < quartile * 2)
+        return 'SECOND_QUARTILE';
+    if (count < quartile * 3)
+        return 'THIRD_QUARTILE';
+    return 'FOURTH_QUARTILE';
+};
+const truncateToUTCDate = (date) => new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
+const toNonNegativeInteger = (value) => {
+    if (!Number.isFinite(value) || value < 0) {
+        throw new Error(`Scenario counts must be non-negative numbers. Received: ${value}`);
+    }
+    return Math.floor(value);
+};
+const clampNumber = (value, min, max) => Math.max(min, Math.min(max, value));
+
+
+/***/ },
+
+/***/ "./src/shared/types.ts"
+/*!*****************************!*\
+  !*** ./src/shared/types.ts ***!
+  \*****************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   PLATFORMS: () => (/* binding */ PLATFORMS),
+/* harmony export */   SCENARIOS: () => (/* binding */ SCENARIOS)
+/* harmony export */ });
+const PLATFORMS = ['github', 'gitlab', 'scenario'];
+const SCENARIOS = ['full', 'empty', 'random', 'checkerboard', 'gradient', 'streaks'];
+
+
+/***/ },
+
+/***/ "./src/shared/utils/utils.ts"
 /*!***********************************!*\
   !*** ./src/shared/utils/utils.ts ***!
   \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -6240,6 +6423,18 @@ __webpack_require__.r(__webpack_exports__);
 /* ─────────────────────────── Helpers ─────────────────────────── */
 const weeksBetween = (start, end) => Math.floor((end.getTime() - start.getTime()) / (7 * 24 * 60 * 60 * 1000));
 const truncateToUTCDate = (d) => new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()));
+const getLatestContributionDate = (store) => store.contributions.reduce((latestDate, contribution) => {
+    const contributionDate = truncateToUTCDate(new Date(contribution.date));
+    return latestDate === undefined || contributionDate > latestDate ? contributionDate : latestDate;
+}, undefined);
+const getGridEndDate = (store) => {
+    const endDate = truncateToUTCDate(new Date());
+    const latestContributionDate = getLatestContributionDate(store);
+    if (latestContributionDate && latestContributionDate > endDate) {
+        return latestContributionDate;
+    }
+    return endDate;
+};
 /* ───────────────────────── Theme helpers ────────────────────── */
 const getCurrentTheme = (store) => { var _a; return (_a = _constants__WEBPACK_IMPORTED_MODULE_0__.GAME_THEMES[store.config.gameTheme]) !== null && _a !== void 0 ? _a : _constants__WEBPACK_IMPORTED_MODULE_0__.GAME_THEMES['github']; };
 const levelToIndex = (level) => {
@@ -6271,7 +6466,7 @@ const calculateContributionLevel = (contribution, maxContribution) => {
     return 'FOURTH_QUARTILE';
 };
 const buildGrid = (store) => {
-    const endDate = truncateToUTCDate(new Date());
+    const endDate = getGridEndDate(store);
     const startDate = new Date(endDate);
     startDate.setUTCDate(endDate.getUTCDate() - 365);
     startDate.setUTCDate(startDate.getUTCDate() - startDate.getUTCDay());
@@ -6299,7 +6494,7 @@ const buildGrid = (store) => {
     store.grid = grid;
 };
 const buildMonthLabels = (store) => {
-    const endDate = truncateToUTCDate(new Date());
+    const endDate = getGridEndDate(store);
     const startDate = new Date(endDate);
     startDate.setUTCDate(endDate.getUTCDate() - 365);
     startDate.setUTCDate(startDate.getUTCDate() - startDate.getUTCDay());
@@ -6330,7 +6525,7 @@ const Utils = {
 };
 
 
-/***/ })
+/***/ }
 
 /******/ });
 /************************************************************************/
@@ -6352,6 +6547,12 @@ const Utils = {
 /******/ 	};
 /******/ 
 /******/ 	// Execute the module function
+/******/ 	if (!(moduleId in __webpack_modules__)) {
+/******/ 		delete __webpack_module_cache__[moduleId];
+/******/ 		var e = new Error("Cannot find module '" + moduleId + "'");
+/******/ 		e.code = 'MODULE_NOT_FOUND';
+/******/ 		throw e;
+/******/ 	}
 /******/ 	__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
 /******/ 
 /******/ 	// Return the exports of the module
@@ -6402,9 +6603,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   BreakoutRenderer: () => (/* reexport safe */ _breakout_index__WEBPACK_IMPORTED_MODULE_1__.BreakoutRenderer),
 /* harmony export */   GAME_REGISTRY: () => (/* reexport safe */ _shared_arcade_renderer__WEBPACK_IMPORTED_MODULE_5__.GAME_REGISTRY),
 /* harmony export */   GalagaRenderer: () => (/* reexport safe */ _galaga_index__WEBPACK_IMPORTED_MODULE_2__.GalagaRenderer),
+/* harmony export */   PLATFORMS: () => (/* reexport safe */ _shared_types__WEBPACK_IMPORTED_MODULE_7__.PLATFORMS),
 /* harmony export */   PacmanRenderer: () => (/* reexport safe */ _pacman_index__WEBPACK_IMPORTED_MODULE_3__.PacmanRenderer),
 /* harmony export */   PlayerStyle: () => (/* reexport safe */ _pacman_index__WEBPACK_IMPORTED_MODULE_3__.PlayerStyle),
-/* harmony export */   PuzzleBobbleRenderer: () => (/* reexport safe */ _puzzle_bobble_index__WEBPACK_IMPORTED_MODULE_4__.PuzzleBobbleRenderer)
+/* harmony export */   PuzzleBobbleRenderer: () => (/* reexport safe */ _puzzle_bobble_index__WEBPACK_IMPORTED_MODULE_4__.PuzzleBobbleRenderer),
+/* harmony export */   SCENARIOS: () => (/* reexport safe */ _shared_types__WEBPACK_IMPORTED_MODULE_7__.SCENARIOS),
+/* harmony export */   generateScenarioContributions: () => (/* reexport safe */ _shared_providers_scenarios__WEBPACK_IMPORTED_MODULE_6__.generateScenarioContributions),
+/* harmony export */   isScenarioName: () => (/* reexport safe */ _shared_providers_scenarios__WEBPACK_IMPORTED_MODULE_6__.isScenarioName),
+/* harmony export */   resolveScenarioName: () => (/* reexport safe */ _shared_providers_scenarios__WEBPACK_IMPORTED_MODULE_6__.resolveScenarioName)
 /* harmony export */ });
 /* harmony import */ var _bomberman_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bomberman/index */ "./src/bomberman/index.ts");
 /* harmony import */ var _breakout_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./breakout/index */ "./src/breakout/index.ts");
@@ -6412,6 +6618,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pacman_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pacman/index */ "./src/pacman/index.ts");
 /* harmony import */ var _puzzle_bobble_index__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./puzzle-bobble/index */ "./src/puzzle-bobble/index.ts");
 /* harmony import */ var _shared_arcade_renderer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./shared/arcade-renderer */ "./src/shared/arcade-renderer.ts");
+/* harmony import */ var _shared_providers_scenarios__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./shared/providers/scenarios */ "./src/shared/providers/scenarios.ts");
+/* harmony import */ var _shared_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./shared/types */ "./src/shared/types.ts");
+
+
 
 
 
@@ -6421,15 +6631,20 @@ __webpack_require__.r(__webpack_exports__);
 
 })();
 
-var __webpack_exports__ARCADE_GAMES = __webpack_exports__.ARCADE_GAMES;
-var __webpack_exports__ArcadeRenderer = __webpack_exports__.ArcadeRenderer;
-var __webpack_exports__BombermanRenderer = __webpack_exports__.BombermanRenderer;
-var __webpack_exports__BreakoutRenderer = __webpack_exports__.BreakoutRenderer;
-var __webpack_exports__GAME_REGISTRY = __webpack_exports__.GAME_REGISTRY;
-var __webpack_exports__GalagaRenderer = __webpack_exports__.GalagaRenderer;
-var __webpack_exports__PacmanRenderer = __webpack_exports__.PacmanRenderer;
-var __webpack_exports__PlayerStyle = __webpack_exports__.PlayerStyle;
-var __webpack_exports__PuzzleBobbleRenderer = __webpack_exports__.PuzzleBobbleRenderer;
-export { __webpack_exports__ARCADE_GAMES as ARCADE_GAMES, __webpack_exports__ArcadeRenderer as ArcadeRenderer, __webpack_exports__BombermanRenderer as BombermanRenderer, __webpack_exports__BreakoutRenderer as BreakoutRenderer, __webpack_exports__GAME_REGISTRY as GAME_REGISTRY, __webpack_exports__GalagaRenderer as GalagaRenderer, __webpack_exports__PacmanRenderer as PacmanRenderer, __webpack_exports__PlayerStyle as PlayerStyle, __webpack_exports__PuzzleBobbleRenderer as PuzzleBobbleRenderer };
+const __webpack_exports__ARCADE_GAMES = __webpack_exports__.ARCADE_GAMES;
+const __webpack_exports__ArcadeRenderer = __webpack_exports__.ArcadeRenderer;
+const __webpack_exports__BombermanRenderer = __webpack_exports__.BombermanRenderer;
+const __webpack_exports__BreakoutRenderer = __webpack_exports__.BreakoutRenderer;
+const __webpack_exports__GAME_REGISTRY = __webpack_exports__.GAME_REGISTRY;
+const __webpack_exports__GalagaRenderer = __webpack_exports__.GalagaRenderer;
+const __webpack_exports__PLATFORMS = __webpack_exports__.PLATFORMS;
+const __webpack_exports__PacmanRenderer = __webpack_exports__.PacmanRenderer;
+const __webpack_exports__PlayerStyle = __webpack_exports__.PlayerStyle;
+const __webpack_exports__PuzzleBobbleRenderer = __webpack_exports__.PuzzleBobbleRenderer;
+const __webpack_exports__SCENARIOS = __webpack_exports__.SCENARIOS;
+const __webpack_exports__generateScenarioContributions = __webpack_exports__.generateScenarioContributions;
+const __webpack_exports__isScenarioName = __webpack_exports__.isScenarioName;
+const __webpack_exports__resolveScenarioName = __webpack_exports__.resolveScenarioName;
+export { __webpack_exports__ARCADE_GAMES as ARCADE_GAMES, __webpack_exports__ArcadeRenderer as ArcadeRenderer, __webpack_exports__BombermanRenderer as BombermanRenderer, __webpack_exports__BreakoutRenderer as BreakoutRenderer, __webpack_exports__GAME_REGISTRY as GAME_REGISTRY, __webpack_exports__GalagaRenderer as GalagaRenderer, __webpack_exports__PLATFORMS as PLATFORMS, __webpack_exports__PacmanRenderer as PacmanRenderer, __webpack_exports__PlayerStyle as PlayerStyle, __webpack_exports__PuzzleBobbleRenderer as PuzzleBobbleRenderer, __webpack_exports__SCENARIOS as SCENARIOS, __webpack_exports__generateScenarioContributions as generateScenarioContributions, __webpack_exports__isScenarioName as isScenarioName, __webpack_exports__resolveScenarioName as resolveScenarioName };
 
 //# sourceMappingURL=pacman-contribution-graph.js.map
