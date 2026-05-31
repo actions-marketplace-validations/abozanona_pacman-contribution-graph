@@ -95,10 +95,13 @@ const startGame = async (store: StoreType) => {
 	store.frameCount = 0;
 	store.aliveSteps = 0;
 	store.gameHistory = [];
+	store.cellEvents = [];
 	store.ghosts.forEach((g) => (g.scared = false));
 	GhostsMovement.resetGameMode();
 
 	store.grid = Utils.createGridFromData(store);
+	// Snapshot initial colors before any cells are eaten (used by SVG renderer)
+	store.initialColors = store.grid.map((col) => col.map((cell) => cell.color));
 
 	const remainingCells = () => store.grid.some((row) => row.some((cell) => cell.commitsCount > 0));
 
@@ -107,7 +110,12 @@ const startGame = async (store: StoreType) => {
 		placeGhosts(store);
 	}
 
-	while (remainingCells()) {
+	// Cap frames to prevent unbounded runtime on dense grids.
+	// Matches the cap used by Breakout (3000) and Galaga (3000).
+	// At 200ms/frame this is 10 minutes of animation — more than enough.
+	const MAX_FRAMES = 3000;
+
+	while (remainingCells() && store.gameHistory.length < MAX_FRAMES) {
 		await updateGame(store);
 	}
 	await updateGame(store);
@@ -215,10 +223,12 @@ const updateGame = async (store: StoreType) => {
 
 /* ---------- snapshot helper ---------- */
 const pushSnapshot = (store: StoreType) => {
+	// Grid state is NOT stored per frame — cell changes are tracked in store.cellEvents.
+	// This matches the pattern used by Breakout, Galaga, and Bomberman, and eliminates
+	// the 371-object grid copy that was the root cause of heap fragmentation.
 	store.gameHistory.push({
-		pacman: { ...store.pacman },
-		ghosts: store.ghosts.map((g) => ({ ...g })),
-		grid: store.grid.map((row) => row.map((col) => ({ ...col })))
+		pacman: { ...store.pacman, recentPositions: [...store.pacman.recentPositions] },
+		ghosts: store.ghosts.map((g) => ({ ...g }))
 	});
 };
 

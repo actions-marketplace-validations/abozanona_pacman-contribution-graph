@@ -41,7 +41,7 @@ const generateAnimatedSVG = (store: StoreType) => {
 		for (let y = 0; y < GRID_HEIGHT; y++) {
 			const cellX = x * (CELL_SIZE + GAP_SIZE);
 			const cellY = y * (CELL_SIZE + GAP_SIZE) + 15;
-			const cellColorAnimation = generateChangingValuesAnimation(store, generateCellColorValues(store, x, y));
+			const cellColorAnimation = getCellAnimationData(store, x, y);
 			svg += `<rect id="c-${x}-${y}" x="${cellX}" y="${cellY}" width="${CELL_SIZE}" height="${CELL_SIZE}" rx="5" fill="${Utils.getCurrentTheme(store).intensityColors[0]}">
 				<animate attributeName="fill" dur="${totalDurationMs}ms" repeatCount="indefinite" 
 					values="${cellColorAnimation.values}" 
@@ -301,8 +301,39 @@ const generatePacManRotations = (store: StoreType): string[] => {
 	});
 };
 
-const generateCellColorValues = (store: StoreType, x: number, y: number): string[] => {
-	return store.gameHistory.map((state) => state.grid[x][y].color);
+/**
+ * Build cell color animation data from cellEvents (sparse change list).
+ * Replaces the old per-frame grid snapshot approach.
+ * Cost: O(events for this cell) instead of O(totalFrames).
+ */
+const getCellAnimationData = (store: StoreType, x: number, y: number): AnimationData => {
+	const totalFrames = store.gameHistory.length;
+	const initialColor = store.initialColors[x]?.[y] ?? Utils.getCurrentTheme(store).intensityColors[0];
+	const events = store.cellEvents.filter((e) => e.x === x && e.y === y);
+
+	if (events.length === 0) {
+		return { keyTimes: '0;1', values: `${initialColor};${initialColor}` };
+	}
+
+	const kTimes: number[] = [0];
+	const kValues: string[] = [initialColor];
+
+	for (const ev of events) {
+		const t = Number((ev.frameIndex / Math.max(totalFrames - 1, 1)).toFixed(SVG_KEY_TIMES_PRECISION));
+		if (t !== kTimes[kTimes.length - 1]) {
+			kTimes.push(t);
+			kValues.push(ev.color);
+		} else {
+			kValues[kValues.length - 1] = ev.color;
+		}
+	}
+
+	if (kTimes[kTimes.length - 1] !== 1) {
+		kTimes.push(1);
+		kValues.push(kValues[kValues.length - 1]);
+	}
+
+	return { keyTimes: kTimes.join(';'), values: kValues.join(';') };
 };
 
 const generateGhostPositions = (store: StoreType, ghostIndex: number): string[] => {

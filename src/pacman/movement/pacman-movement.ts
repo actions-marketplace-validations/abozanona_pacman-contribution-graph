@@ -292,6 +292,15 @@ const checkAndEatPoint = (store: StoreType) => {
 		cell.level = 'NONE';
 		cell.color = theme.intensityColors[0];
 		cell.commitsCount = 0;
+
+		// Record the color change — keyed to the NEXT frame index (the frame
+		// that will be pushed by pushSnapshot after this move completes).
+		store.cellEvents.push({
+			frameIndex: store.gameHistory.length,
+			x: store.pacman.x,
+			y: store.pacman.y,
+			color: cell.color
+		});
 	}
 };
 

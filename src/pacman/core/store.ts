@@ -21,6 +21,8 @@ export const Store: StoreType = {
 	pacmanMouthOpen: true,
 	gameInterval: 0,
 	gameHistory: [],
+	initialColors: [],
+	cellEvents: [],
 	config: undefined as unknown as Config,
 	useGithubThemeColor: true
 };
