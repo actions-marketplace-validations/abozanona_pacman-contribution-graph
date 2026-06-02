@@ -1,10 +1,10 @@
 /******/ var __webpack_modules__ = ({
 
-/***/ "./src/bomberman/core/ai.ts"
+/***/ "./src/bomberman/core/ai.ts":
 /*!**********************************!*\
   !*** ./src/bomberman/core/ai.ts ***!
   \**********************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -371,13 +371,13 @@ class AiController {
 }
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/bomberman/core/board.ts"
+/***/ "./src/bomberman/core/board.ts":
 /*!*************************************!*\
   !*** ./src/bomberman/core/board.ts ***!
   \*************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -446,13 +446,13 @@ const getAdjacentPositions = (position) => GridPosition.from(position)
     .map((next) => ({ x: next.x, y: next.y, direction: next.direction }));
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/bomberman/core/constants.ts"
+/***/ "./src/bomberman/core/constants.ts":
 /*!*****************************************!*\
   !*** ./src/bomberman/core/constants.ts ***!
   \*****************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -847,13 +847,13 @@ const SPRITE_SETS = {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/bomberman/core/game.ts"
+/***/ "./src/bomberman/core/game.ts":
 /*!************************************!*\
   !*** ./src/bomberman/core/game.ts ***!
   \************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -999,13 +999,13 @@ const Game = {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/bomberman/core/pathfinding.ts"
+/***/ "./src/bomberman/core/pathfinding.ts":
 /*!*******************************************!*\
   !*** ./src/bomberman/core/pathfinding.ts ***!
   \*******************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1251,13 +1251,13 @@ const canEscapeAfterPlantingBomb = (store, player) => {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/bomberman/core/state.ts"
+/***/ "./src/bomberman/core/state.ts":
 /*!*************************************!*\
   !*** ./src/bomberman/core/state.ts ***!
   \*************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1335,13 +1335,13 @@ class GameState {
 }
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/bomberman/core/store.ts"
+/***/ "./src/bomberman/core/store.ts":
 /*!*************************************!*\
   !*** ./src/bomberman/core/store.ts ***!
   \*************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1367,13 +1367,13 @@ const storeTemplate = {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/bomberman/entities/bomb.ts"
+/***/ "./src/bomberman/entities/bomb.ts":
 /*!****************************************!*\
   !*** ./src/bomberman/entities/bomb.ts ***!
   \****************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1606,13 +1606,13 @@ class Bomb {
 }
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/bomberman/entities/explosion.ts"
+/***/ "./src/bomberman/entities/explosion.ts":
 /*!*********************************************!*\
   !*** ./src/bomberman/entities/explosion.ts ***!
   \*********************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1653,13 +1653,13 @@ class Explosion {
 }
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/bomberman/entities/item.ts"
+/***/ "./src/bomberman/entities/item.ts":
 /*!****************************************!*\
   !*** ./src/bomberman/entities/item.ts ***!
   \****************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1824,13 +1824,13 @@ class Item {
 }
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/bomberman/entities/player.ts"
+/***/ "./src/bomberman/entities/player.ts":
 /*!******************************************!*\
   !*** ./src/bomberman/entities/player.ts ***!
   \******************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1987,13 +1987,13 @@ class Player {
 }
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/bomberman/index.ts"
+/***/ "./src/bomberman/index.ts":
 /*!********************************!*\
   !*** ./src/bomberman/index.ts ***!
   \********************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -2045,13 +2045,13 @@ class BombermanRenderer {
 }
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/bomberman/renderers/animation.ts"
+/***/ "./src/bomberman/renderers/animation.ts":
 /*!**********************************************!*\
   !*** ./src/bomberman/renderers/animation.ts ***!
   \**********************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -2173,13 +2173,13 @@ const appendFinalKeyframe = (keyTimes, values) => {
 const frameToKeyTime = (frameIndex, totalFrames) => Number((Math.min(frameIndex, Math.max(totalFrames - 1, 1)) / Math.max(totalFrames - 1, 1)).toFixed(_core_constants__WEBPACK_IMPORTED_MODULE_0__.SVG.PRECISION));
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/bomberman/renderers/svg.ts"
+/***/ "./src/bomberman/renderers/svg.ts":
 /*!****************************************!*\
   !*** ./src/bomberman/renderers/svg.ts ***!
   \****************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -2833,13 +2833,13 @@ const Renderer = {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/breakout/core/constants.ts"
+/***/ "./src/breakout/core/constants.ts":
 /*!****************************************!*\
   !*** ./src/breakout/core/constants.ts ***!
   \****************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -2897,13 +2897,13 @@ const PADDLE_COLOR = '#ffffff';
 const BALL_SHADOW_COLOR = '#aaaaaa';
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/breakout/core/game.ts"
+/***/ "./src/breakout/core/game.ts":
 /*!***********************************!*\
   !*** ./src/breakout/core/game.ts ***!
   \***********************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -3182,13 +3182,13 @@ const BreakoutGame = {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/breakout/core/store.ts"
+/***/ "./src/breakout/core/store.ts":
 /*!************************************!*\
   !*** ./src/breakout/core/store.ts ***!
   \************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -3211,13 +3211,13 @@ const BreakoutStore = {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/breakout/index.ts"
+/***/ "./src/breakout/index.ts":
 /*!*******************************!*\
   !*** ./src/breakout/index.ts ***!
   \*******************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -3270,13 +3270,13 @@ class BreakoutRenderer {
 }
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/breakout/renderers/svg.ts"
+/***/ "./src/breakout/renderers/svg.ts":
 /*!***************************************!*\
   !*** ./src/breakout/renderers/svg.ts ***!
   \***************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -3437,13 +3437,13 @@ const buildChangingValuesAnimation = (store, values) => {
 const BreakoutSVG = { generateAnimatedSVG };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/galaga/core/constants.ts"
+/***/ "./src/galaga/core/constants.ts":
 /*!**************************************!*\
   !*** ./src/galaga/core/constants.ts ***!
   \**************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -3497,13 +3497,13 @@ const BULLET_IMAGE_DATA = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAC
 const SHIP_IMAGE_DATA = 'data:image/png;base64,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';
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/galaga/core/game.ts"
+/***/ "./src/galaga/core/game.ts":
 /*!*********************************!*\
   !*** ./src/galaga/core/game.ts ***!
   \*********************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -3703,13 +3703,13 @@ const updateGame = (store) => {
 const GalagaGame = { startGame, stopGame };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/galaga/core/store.ts"
+/***/ "./src/galaga/core/store.ts":
 /*!**********************************!*\
   !*** ./src/galaga/core/store.ts ***!
   \**********************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -3734,13 +3734,13 @@ const GalagaStore = {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/galaga/index.ts"
+/***/ "./src/galaga/index.ts":
 /*!*****************************!*\
   !*** ./src/galaga/index.ts ***!
   \*****************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -3793,13 +3793,13 @@ class GalagaRenderer {
 }
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/galaga/renderers/svg.ts"
+/***/ "./src/galaga/renderers/svg.ts":
 /*!*************************************!*\
   !*** ./src/galaga/renderers/svg.ts ***!
   \*************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -4088,13 +4088,13 @@ const buildChangingValuesAnimation = (store, values) => {
 const GalagaSVG = { generateAnimatedSVG };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/minesweeper/core/constants.ts"
+/***/ "./src/minesweeper/core/constants.ts":
 /*!*******************************************!*\
   !*** ./src/minesweeper/core/constants.ts ***!
   \*******************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -4127,13 +4127,13 @@ const MINESWEEPER_MS_PER_FRAME = _shared_constants__WEBPACK_IMPORTED_MODULE_0__.
 const MINESWEEPER_MAX_MOVE_FRAMES = Math.max(1, Math.ceil(MINESWEEPER_MAX_MOVE_DURATION_MS / MINESWEEPER_MS_PER_FRAME));
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/minesweeper/core/game.ts"
+/***/ "./src/minesweeper/core/game.ts":
 /*!**************************************!*\
   !*** ./src/minesweeper/core/game.ts ***!
   \**************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -4462,13 +4462,13 @@ const Game = {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/minesweeper/core/store.ts"
+/***/ "./src/minesweeper/core/store.ts":
 /*!***************************************!*\
   !*** ./src/minesweeper/core/store.ts ***!
   \***************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -4492,13 +4492,13 @@ const Store = {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/minesweeper/index.ts"
+/***/ "./src/minesweeper/index.ts":
 /*!**********************************!*\
   !*** ./src/minesweeper/index.ts ***!
   \**********************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -4551,13 +4551,13 @@ class MinesweeperRenderer {
 }
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/minesweeper/renderers/svg.ts"
+/***/ "./src/minesweeper/renderers/svg.ts":
 /*!******************************************!*\
   !*** ./src/minesweeper/renderers/svg.ts ***!
   \******************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -4839,13 +4839,13 @@ const Renderer = {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/pacman/core/constants.ts"
+/***/ "./src/pacman/core/constants.ts":
 /*!**************************************!*\
   !*** ./src/pacman/core/constants.ts ***!
   \**************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -4949,13 +4949,13 @@ const hasWall = (x, y, direction) => {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/pacman/core/game.ts"
+/***/ "./src/pacman/core/game.ts":
 /*!*********************************!*\
   !*** ./src/pacman/core/game.ts ***!
   \*********************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -5067,15 +5067,18 @@ const startGame = (store) => __awaiter(void 0, void 0, void 0, function* () {
     store.frameCount = 0;
     store.aliveSteps = 0;
     store.gameHistory = [];
+    store.cellEvents = [];
     store.ghosts.forEach((g) => (g.scared = false));
     _movement_ghosts_movement__WEBPACK_IMPORTED_MODULE_1__.GhostsMovement.resetGameMode();
     store.grid = _shared_utils_utils__WEBPACK_IMPORTED_MODULE_0__.Utils.createGridFromData(store);
+    store.initialColors = store.grid.map((col) => col.map((cell) => cell.color));
     const remainingCells = () => store.grid.some((row) => row.some((cell) => cell.commitsCount > 0));
     if (remainingCells()) {
         placePacman(store);
         placeGhosts(store);
     }
-    while (remainingCells()) {
+    const MAX_FRAMES = 3000;
+    while (remainingCells() && store.gameHistory.length < MAX_FRAMES) {
         yield updateGame(store);
     }
     yield updateGame(store);
@@ -5170,9 +5173,8 @@ const updateGame = (store) => __awaiter(void 0, void 0, void 0, function* () {
 /* ---------- snapshot helper ---------- */
 const pushSnapshot = (store) => {
     store.gameHistory.push({
-        pacman: Object.assign({}, store.pacman),
-        ghosts: store.ghosts.map((g) => (Object.assign({}, g))),
-        grid: store.grid.map((row) => row.map((col) => (Object.assign({}, col))))
+        pacman: Object.assign(Object.assign({}, store.pacman), { recentPositions: [...store.pacman.recentPositions] }),
+        ghosts: store.ghosts.map((g) => (Object.assign({}, g)))
     });
 };
 /* ---------- collisions & house ---------- */
@@ -5218,13 +5220,13 @@ const Game = {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/pacman/core/store.ts"
+/***/ "./src/pacman/core/store.ts":
 /*!**********************************!*\
   !*** ./src/pacman/core/store.ts ***!
   \**********************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -5251,18 +5253,20 @@ const Store = {
     pacmanMouthOpen: true,
     gameInterval: 0,
     gameHistory: [],
+    initialColors: [],
+    cellEvents: [],
     config: undefined,
     useGithubThemeColor: true
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/pacman/index.ts"
+/***/ "./src/pacman/index.ts":
 /*!*****************************!*\
   !*** ./src/pacman/index.ts ***!
   \*****************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -5323,13 +5327,13 @@ class PacmanRenderer {
 }
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/pacman/movement/ghosts-movement.ts"
+/***/ "./src/pacman/movement/ghosts-movement.ts":
 /*!************************************************!*\
   !*** ./src/pacman/movement/ghosts-movement.ts ***!
   \************************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -5901,13 +5905,13 @@ const GhostsMovement = {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/pacman/movement/movement-utils.ts"
+/***/ "./src/pacman/movement/movement-utils.ts":
 /*!***********************************************!*\
   !*** ./src/pacman/movement/movement-utils.ts ***!
   \***********************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -5974,13 +5978,13 @@ const MovementUtils = {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/pacman/movement/pacman-movement.ts"
+/***/ "./src/pacman/movement/pacman-movement.ts":
 /*!************************************************!*\
   !*** ./src/pacman/movement/pacman-movement.ts ***!
   \************************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -6230,14 +6234,19 @@ const checkAndEatPoint = (store) => {
         store.pacman.points++;
         store.config.pointsIncreasedCallback(store.pacman.totalPoints);
         const theme = _shared_utils_utils__WEBPACK_IMPORTED_MODULE_2__.Utils.getCurrentTheme(store);
-        // Power-up activated in the cell
         if (cell.level === 'FOURTH_QUARTILE') {
             activatePowerUp(store);
         }
-        // "Delete" point from cell
         cell.level = 'NONE';
         cell.color = theme.intensityColors[0];
         cell.commitsCount = 0;
+        // Record the color change, keyed to the frame that pushSnapshot will write next.
+        store.cellEvents.push({
+            frameIndex: store.gameHistory.length,
+            x: store.pacman.x,
+            y: store.pacman.y,
+            color: cell.color
+        });
     }
 };
 const activatePowerUp = (store) => {
@@ -6252,13 +6261,13 @@ const PacmanMovement = {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/pacman/renderers/renderer-units.ts"
+/***/ "./src/pacman/renderers/renderer-units.ts":
 /*!************************************************!*\
   !*** ./src/pacman/renderers/renderer-units.ts ***!
   \************************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -6282,13 +6291,13 @@ const RendererUnits = {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/pacman/renderers/svg.ts"
+/***/ "./src/pacman/renderers/svg.ts":
 /*!*************************************!*\
   !*** ./src/pacman/renderers/svg.ts ***!
   \*************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -6302,11 +6311,9 @@ __webpack_require__.r(__webpack_exports__);
 
 const SVG_KEY_TIMES_PRECISION = 4;
 const generateAnimatedSVG = (store) => {
-    // Dimensions and duration
     const svgWidth = _core_constants__WEBPACK_IMPORTED_MODULE_0__.GRID_WIDTH * (_core_constants__WEBPACK_IMPORTED_MODULE_0__.CELL_SIZE + _core_constants__WEBPACK_IMPORTED_MODULE_0__.GAP_SIZE);
-    const svgHeight = _core_constants__WEBPACK_IMPORTED_MODULE_0__.GRID_HEIGHT * (_core_constants__WEBPACK_IMPORTED_MODULE_0__.CELL_SIZE + _core_constants__WEBPACK_IMPORTED_MODULE_0__.GAP_SIZE) + 30; // Extra height for time counter
+    const svgHeight = _core_constants__WEBPACK_IMPORTED_MODULE_0__.GRID_HEIGHT * (_core_constants__WEBPACK_IMPORTED_MODULE_0__.CELL_SIZE + _core_constants__WEBPACK_IMPORTED_MODULE_0__.GAP_SIZE) + 30;
     const totalDurationMs = store.gameHistory.length * _core_constants__WEBPACK_IMPORTED_MODULE_0__.DELTA_TIME;
-    // Basic SVG structure
     let svg = `<svg width="${svgWidth}" height="${svgHeight}" xmlns="http://www.w3.org/2000/svg">`;
     svg += `<desc>Generated with pacman-contribution-graph on ${new Date()}</desc>`;
     svg += `<metadata>
@@ -6319,7 +6326,6 @@ const generateAnimatedSVG = (store) => {
 	</metadata>`;
     svg += `<rect width="100%" height="100%" fill="${_shared_utils_utils__WEBPACK_IMPORTED_MODULE_1__.Utils.getCurrentTheme(store).gridBackground}"/>`;
     svg += generateGhostsPredefinition();
-    // Month labels
     let lastMonth = '';
     for (let y = 0; y < _core_constants__WEBPACK_IMPORTED_MODULE_0__.GRID_WIDTH; y++) {
         if (store.monthLabels[y] !== lastMonth) {
@@ -6333,9 +6339,9 @@ const generateAnimatedSVG = (store) => {
         for (let y = 0; y < _core_constants__WEBPACK_IMPORTED_MODULE_0__.GRID_HEIGHT; y++) {
             const cellX = x * (_core_constants__WEBPACK_IMPORTED_MODULE_0__.CELL_SIZE + _core_constants__WEBPACK_IMPORTED_MODULE_0__.GAP_SIZE);
             const cellY = y * (_core_constants__WEBPACK_IMPORTED_MODULE_0__.CELL_SIZE + _core_constants__WEBPACK_IMPORTED_MODULE_0__.GAP_SIZE) + 15;
-            const cellColorAnimation = generateChangingValuesAnimation(store, generateCellColorValues(store, x, y));
+            const cellColorAnimation = getCellAnimationData(store, x, y);
             svg += `<rect id="c-${x}-${y}" x="${cellX}" y="${cellY}" width="${_core_constants__WEBPACK_IMPORTED_MODULE_0__.CELL_SIZE}" height="${_core_constants__WEBPACK_IMPORTED_MODULE_0__.CELL_SIZE}" rx="5" fill="${_shared_utils_utils__WEBPACK_IMPORTED_MODULE_1__.Utils.getCurrentTheme(store).intensityColors[0]}">
-				<animate attributeName="fill" dur="${totalDurationMs}ms" repeatCount="indefinite" 
+				<animate attributeName="fill" dur="${totalDurationMs}ms" repeatCount="indefinite" calcMode="discrete"
 					values="${cellColorAnimation.values}" 
 					keyTimes="${cellColorAnimation.keyTimes}"/>
 			</rect>`;
@@ -6391,30 +6397,21 @@ const generateAnimatedSVG = (store) => {
 		<animate attributeName="d" dur="0.5s" repeatCount="indefinite"
 			values="${generatePacManPath(0.55)};${generatePacManPath(0.05)};${generatePacManPath(0.55)}"/>
 	</path>`;
-    // Process each ghost separately
     store.ghosts.forEach((ghost, index) => {
-        // Generate position animation for this ghost
         const ghostPositionAnimation = generateChangingValuesAnimation(store, generateGhostPositions(store, index));
-        // Create a group for the ghost
         svg += `<g id="ghost${index}" transform="translate(0,0)">
 			<animateTransform attributeName="transform" type="translate" 
 				dur="${totalDurationMs}ms" repeatCount="indefinite"
 				keyTimes="${ghostPositionAnimation.keyTimes}"
 				values="${ghostPositionAnimation.values}"
 				additive="replace"/>`;
-        // Map all possible state + direction combinations for this ghost
         const stateChanges = mapGhostStateChanges(store, index);
-        // For each possible state, create a <use> element with visibility animation
         for (const [state, keyframes] of Object.entries(stateChanges)) {
-            // Ignore empty states
             if (keyframes.length === 0)
                 continue;
-            // Use the correct ID for reference (blinky-right, scared, etc)
             const href = `#ghost-${state}`;
-            // Build the strings for the animation
             const keyTimes = keyframes.map((kf) => kf.time.toFixed(SVG_KEY_TIMES_PRECISION)).join(';');
             const values = keyframes.map((kf) => (kf.visible ? 'visible' : 'hidden')).join(';');
-            // Initial visibility
             const initialVisibility = keyframes[0].visible ? 'visible' : 'hidden';
             svg += `<use href="${href}" width="${_core_constants__WEBPACK_IMPORTED_MODULE_0__.CELL_SIZE}" height="${_core_constants__WEBPACK_IMPORTED_MODULE_0__.CELL_SIZE}" visibility="${initialVisibility}">
 				<animate attributeName="visibility" 
@@ -6423,89 +6420,56 @@ const generateAnimatedSVG = (store) => {
 					values="${values}" />
 			</use>`;
         }
-        // Close the ghost group
         svg += `</g>`;
     });
     svg += '</svg>';
     return svg;
 };
-// Helper function to map all ghost state changes
 function mapGhostStateChanges(store, ghostIndex) {
-    // A map of states for frames where they are visible
-    // Key: "name-direction" or "scared" or "eyes-direction"
-    // Value: array of {time: number, visible: boolean}
+    // Maps each "name-direction" / "scared" / "eyes-direction" state to an array
+    // of visibility keyframes, so each state can be shown/hidden independently.
     const stateChanges = {};
-    // Initialize possible states for all ghosts
     const allPossibleStates = [
-        'blinky-up',
-        'blinky-down',
-        'blinky-left',
-        'blinky-right',
-        'inky-up',
-        'inky-down',
-        'inky-left',
-        'inky-right',
-        'pinky-up',
-        'pinky-down',
-        'pinky-left',
-        'pinky-right',
-        'clyde-up',
-        'clyde-down',
-        'clyde-left',
-        'clyde-right',
-        'eyes-up',
-        'eyes-down',
-        'eyes-left',
-        'eyes-right',
+        'blinky-up', 'blinky-down', 'blinky-left', 'blinky-right',
+        'inky-up', 'inky-down', 'inky-left', 'inky-right',
+        'pinky-up', 'pinky-down', 'pinky-left', 'pinky-right',
+        'clyde-up', 'clyde-down', 'clyde-left', 'clyde-right',
+        'eyes-up', 'eyes-down', 'eyes-left', 'eyes-right',
         'scared'
     ];
-    // Initialize all states as hidden
     allPossibleStates.forEach((state) => {
         stateChanges[state] = [{ time: 0, visible: false }];
     });
-    // Get the initial ghost
     const initialGhost = store.ghosts[ghostIndex];
     if (!initialGhost)
         return stateChanges;
-    // Set the initial state correctly
     const initialState = initialGhost.scared
         ? 'scared'
         : initialGhost.name === 'eyes'
             ? `eyes-${initialGhost.direction || 'right'}`
             : `${initialGhost.name}-${initialGhost.direction || 'right'}`;
-    // Mark this state as visible initially
     stateChanges[initialState] = [{ time: 0, visible: true }];
-    // Track last state
     let lastState = initialState;
-    // Process each frame of the game history
     store.gameHistory.forEach((state, frameIndex) => {
-        // If the ghost does not exist in this frame, skip
         if (ghostIndex >= state.ghosts.length)
             return;
         const ghost = state.ghosts[ghostIndex];
         const currentTime = frameIndex / (store.gameHistory.length - 1);
-        // Determine the current state
         const currentState = ghost.scared
             ? 'scared'
             : ghost.name === 'eyes'
                 ? `eyes-${ghost.direction || 'right'}`
                 : `${ghost.name}-${ghost.direction || 'right'}`;
-        // If the status has changed
         if (currentState !== lastState) {
-            // Hide previous state
             stateChanges[lastState].push({ time: currentTime, visible: false });
-            // Show new status
             if (!stateChanges[currentState]) {
                 stateChanges[currentState] = [{ time: 0, visible: false }];
             }
             stateChanges[currentState].push({ time: currentTime, visible: true });
-            // Update the latest status
             lastState = currentState;
         }
     });
-    // Ensure the last state remains visible until the end
     stateChanges[lastState].push({ time: 1, visible: true });
-    // Ensure all other states are hidden until the end
     Object.keys(stateChanges).forEach((state) => {
         if (state !== lastState && stateChanges[state].length > 0) {
             const lastKeyframe = stateChanges[state][stateChanges[state].length - 1];
@@ -6548,19 +6512,39 @@ const generatePacManRotations = (store) => {
                 return `0 ${pivit} ${pivit}`;
         }
     };
-    // Position interpolates linearly between snapshot[i] and snapshot[i+1]
-    // during interval i. The direction stored in snapshot[i+1] is the
-    // direction Pac-Man took during that move, so it must be displayed for
-    // the entire slide, not just at its end. Shift the rotation values one
-    // frame forward so the discrete keyframe at time keyTimes[i] holds the
-    // direction of the slide that begins there.
+    // The direction stored in snapshot[i+1] is the direction taken during the slide
+    // that begins at keyframe i, so shift one frame forward to keep it in sync.
     return store.gameHistory.map((_, i) => {
         const lookaheadIndex = Math.min(i + 1, store.gameHistory.length - 1);
         return directionToRotation(store.gameHistory[lookaheadIndex].pacman.direction);
     });
 };
-const generateCellColorValues = (store, x, y) => {
-    return store.gameHistory.map((state) => state.grid[x][y].color);
+/** Build cell color animation data from the sparse cellEvents list. */
+const getCellAnimationData = (store, x, y) => {
+    var _a, _b;
+    const totalFrames = store.gameHistory.length;
+    const initialColor = (_b = (_a = store.initialColors[x]) === null || _a === void 0 ? void 0 : _a[y]) !== null && _b !== void 0 ? _b : _shared_utils_utils__WEBPACK_IMPORTED_MODULE_1__.Utils.getCurrentTheme(store).intensityColors[0];
+    const events = store.cellEvents.filter((e) => e.x === x && e.y === y);
+    if (events.length === 0) {
+        return { keyTimes: '0;1', values: `${initialColor};${initialColor}` };
+    }
+    const kTimes = [0];
+    const kValues = [initialColor];
+    for (const ev of events) {
+        const t = Number((ev.frameIndex / Math.max(totalFrames - 1, 1)).toFixed(SVG_KEY_TIMES_PRECISION));
+        if (t !== kTimes[kTimes.length - 1]) {
+            kTimes.push(t);
+            kValues.push(ev.color);
+        }
+        else {
+            kValues[kValues.length - 1] = ev.color;
+        }
+    }
+    if (kTimes[kTimes.length - 1] !== 1) {
+        kTimes.push(1);
+        kValues.push(kValues[kValues.length - 1]);
+    }
+    return { keyTimes: kTimes.join(';'), values: kValues.join(';') };
 };
 const generateGhostPositions = (store, ghostIndex) => {
     return store.gameHistory.map((state) => {
@@ -6668,13 +6652,13 @@ const SVG = {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/pacman/types.ts"
+/***/ "./src/pacman/types.ts":
 /*!*****************************!*\
   !*** ./src/pacman/types.ts ***!
   \*****************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -6688,13 +6672,13 @@ var PlayerStyle;
 })(PlayerStyle || (PlayerStyle = {}));
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/pacman/utils/grid.ts"
+/***/ "./src/pacman/utils/grid.ts":
 /*!**********************************!*\
   !*** ./src/pacman/utils/grid.ts ***!
   \**********************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -6820,13 +6804,13 @@ const Grid = {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/puzzle-bobble/core/constants.ts"
+/***/ "./src/puzzle-bobble/core/constants.ts":
 /*!*********************************************!*\
   !*** ./src/puzzle-bobble/core/constants.ts ***!
   \*********************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -6891,13 +6875,13 @@ const PB_COLORS = [
 ];
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/puzzle-bobble/core/game.ts"
+/***/ "./src/puzzle-bobble/core/game.ts":
 /*!****************************************!*\
   !*** ./src/puzzle-bobble/core/game.ts ***!
   \****************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -7440,13 +7424,13 @@ const updateGame = (store) => {
 const PuzzleBobbleGame = { startGame, stopGame };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/puzzle-bobble/core/store.ts"
+/***/ "./src/puzzle-bobble/core/store.ts":
 /*!*****************************************!*\
   !*** ./src/puzzle-bobble/core/store.ts ***!
   \*****************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -7472,13 +7456,13 @@ const PuzzleBobbleStore = {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/puzzle-bobble/index.ts"
+/***/ "./src/puzzle-bobble/index.ts":
 /*!************************************!*\
   !*** ./src/puzzle-bobble/index.ts ***!
   \************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -7531,13 +7515,13 @@ class PuzzleBobbleRenderer {
 }
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/puzzle-bobble/renderers/svg.ts"
+/***/ "./src/puzzle-bobble/renderers/svg.ts":
 /*!********************************************!*\
   !*** ./src/puzzle-bobble/renderers/svg.ts ***!
   \********************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -7811,13 +7795,13 @@ const generateAnimatedSVG = (store) => {
 const PuzzleBobblesVG = { generateAnimatedSVG };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/shared/arcade-renderer.ts"
+/***/ "./src/shared/arcade-renderer.ts":
 /*!***************************************!*\
   !*** ./src/shared/arcade-renderer.ts ***!
   \***************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -7895,13 +7879,13 @@ class ArcadeRenderer {
 }
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/shared/constants.ts"
+/***/ "./src/shared/constants.ts":
 /*!*********************************!*\
   !*** ./src/shared/constants.ts ***!
   \*********************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -7955,13 +7939,13 @@ const GAME_THEMES = {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/shared/providers/github-contributions.ts"
+/***/ "./src/shared/providers/github-contributions.ts":
 /*!******************************************************!*\
   !*** ./src/shared/providers/github-contributions.ts ***!
   \******************************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -8083,13 +8067,13 @@ const fetchGithubContributionsGraphQL = (store) => __awaiter(void 0, void 0, voi
 });
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/shared/providers/gitlab-contributions.ts"
+/***/ "./src/shared/providers/gitlab-contributions.ts":
 /*!******************************************************!*\
   !*** ./src/shared/providers/gitlab-contributions.ts ***!
   \******************************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -8129,13 +8113,13 @@ const fetchGitlabContributions = (store) => __awaiter(void 0, void 0, void 0, fu
 });
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/shared/providers/providers.ts"
+/***/ "./src/shared/providers/providers.ts":
 /*!*******************************************!*\
   !*** ./src/shared/providers/providers.ts ***!
   \*******************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -8178,13 +8162,13 @@ const Providers = {
 };
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/shared/providers/scenarios.ts"
+/***/ "./src/shared/providers/scenarios.ts":
 /*!*******************************************!*\
   !*** ./src/shared/providers/scenarios.ts ***!
   \*******************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -8352,13 +8336,13 @@ const toNonNegativeInteger = (value) => {
 const clampNumber = (value, min, max) => Math.max(min, Math.min(max, value));
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/shared/types.ts"
+/***/ "./src/shared/types.ts":
 /*!*****************************!*\
   !*** ./src/shared/types.ts ***!
   \*****************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -8369,13 +8353,13 @@ const PLATFORMS = ['github', 'gitlab', 'scenario'];
 const SCENARIOS = ['full', 'empty', 'random', 'checkerboard', 'gradient', 'streaks'];
 
 
-/***/ },
+/***/ }),
 
-/***/ "./src/shared/utils/utils.ts"
+/***/ "./src/shared/utils/utils.ts":
 /*!***********************************!*\
   !*** ./src/shared/utils/utils.ts ***!
   \***********************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -8494,7 +8478,7 @@ const Utils = {
 };
 
 
-/***/ }
+/***/ })
 
 /******/ });
 /************************************************************************/
@@ -8516,12 +8500,6 @@ const Utils = {
 /******/ 	};
 /******/ 
 /******/ 	// Execute the module function
-/******/ 	if (!(moduleId in __webpack_modules__)) {
-/******/ 		delete __webpack_module_cache__[moduleId];
-/******/ 		var e = new Error("Cannot find module '" + moduleId + "'");
-/******/ 		e.code = 'MODULE_NOT_FOUND';
-/******/ 		throw e;
-/******/ 	}
 /******/ 	__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
 /******/ 
 /******/ 	// Return the exports of the module
@@ -8603,21 +8581,21 @@ __webpack_require__.r(__webpack_exports__);
 
 })();
 
-const __webpack_exports__ARCADE_GAMES = __webpack_exports__.ARCADE_GAMES;
-const __webpack_exports__ArcadeRenderer = __webpack_exports__.ArcadeRenderer;
-const __webpack_exports__BombermanRenderer = __webpack_exports__.BombermanRenderer;
-const __webpack_exports__BreakoutRenderer = __webpack_exports__.BreakoutRenderer;
-const __webpack_exports__GAME_REGISTRY = __webpack_exports__.GAME_REGISTRY;
-const __webpack_exports__GalagaRenderer = __webpack_exports__.GalagaRenderer;
-const __webpack_exports__MinesweeperRenderer = __webpack_exports__.MinesweeperRenderer;
-const __webpack_exports__PLATFORMS = __webpack_exports__.PLATFORMS;
-const __webpack_exports__PacmanRenderer = __webpack_exports__.PacmanRenderer;
-const __webpack_exports__PlayerStyle = __webpack_exports__.PlayerStyle;
-const __webpack_exports__PuzzleBobbleRenderer = __webpack_exports__.PuzzleBobbleRenderer;
-const __webpack_exports__SCENARIOS = __webpack_exports__.SCENARIOS;
-const __webpack_exports__generateScenarioContributions = __webpack_exports__.generateScenarioContributions;
-const __webpack_exports__isScenarioName = __webpack_exports__.isScenarioName;
-const __webpack_exports__resolveScenarioName = __webpack_exports__.resolveScenarioName;
+var __webpack_exports__ARCADE_GAMES = __webpack_exports__.ARCADE_GAMES;
+var __webpack_exports__ArcadeRenderer = __webpack_exports__.ArcadeRenderer;
+var __webpack_exports__BombermanRenderer = __webpack_exports__.BombermanRenderer;
+var __webpack_exports__BreakoutRenderer = __webpack_exports__.BreakoutRenderer;
+var __webpack_exports__GAME_REGISTRY = __webpack_exports__.GAME_REGISTRY;
+var __webpack_exports__GalagaRenderer = __webpack_exports__.GalagaRenderer;
+var __webpack_exports__MinesweeperRenderer = __webpack_exports__.MinesweeperRenderer;
+var __webpack_exports__PLATFORMS = __webpack_exports__.PLATFORMS;
+var __webpack_exports__PacmanRenderer = __webpack_exports__.PacmanRenderer;
+var __webpack_exports__PlayerStyle = __webpack_exports__.PlayerStyle;
+var __webpack_exports__PuzzleBobbleRenderer = __webpack_exports__.PuzzleBobbleRenderer;
+var __webpack_exports__SCENARIOS = __webpack_exports__.SCENARIOS;
+var __webpack_exports__generateScenarioContributions = __webpack_exports__.generateScenarioContributions;
+var __webpack_exports__isScenarioName = __webpack_exports__.isScenarioName;
+var __webpack_exports__resolveScenarioName = __webpack_exports__.resolveScenarioName;
 export { __webpack_exports__ARCADE_GAMES as ARCADE_GAMES, __webpack_exports__ArcadeRenderer as ArcadeRenderer, __webpack_exports__BombermanRenderer as BombermanRenderer, __webpack_exports__BreakoutRenderer as BreakoutRenderer, __webpack_exports__GAME_REGISTRY as GAME_REGISTRY, __webpack_exports__GalagaRenderer as GalagaRenderer, __webpack_exports__MinesweeperRenderer as MinesweeperRenderer, __webpack_exports__PLATFORMS as PLATFORMS, __webpack_exports__PacmanRenderer as PacmanRenderer, __webpack_exports__PlayerStyle as PlayerStyle, __webpack_exports__PuzzleBobbleRenderer as PuzzleBobbleRenderer, __webpack_exports__SCENARIOS as SCENARIOS, __webpack_exports__generateScenarioContributions as generateScenarioContributions, __webpack_exports__isScenarioName as isScenarioName, __webpack_exports__resolveScenarioName as resolveScenarioName };
 
 //# sourceMappingURL=pacman-contribution-graph.js.map

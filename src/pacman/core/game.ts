@@ -109,7 +109,6 @@ const startGame = async (store: StoreType) => {
 		placeGhosts(store);
 	}
 
-	// Cap frames to prevent unbounded runtime on dense grids (matches Breakout/Galaga).
 	const MAX_FRAMES = 3000;
 
 	while (remainingCells() && store.gameHistory.length < MAX_FRAMES) {
