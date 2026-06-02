@@ -146,11 +146,26 @@ function mapGhostStateChanges(store: StoreType, ghostIndex: number) {
 	const stateChanges: Record<string, { time: number; visible: boolean }[]> = {};
 
 	const allPossibleStates = [
-		'blinky-up', 'blinky-down', 'blinky-left', 'blinky-right',
-		'inky-up',   'inky-down',   'inky-left',   'inky-right',
-		'pinky-up',  'pinky-down',  'pinky-left',  'pinky-right',
-		'clyde-up',  'clyde-down',  'clyde-left',  'clyde-right',
-		'eyes-up',   'eyes-down',   'eyes-left',   'eyes-right',
+		'blinky-up',
+		'blinky-down',
+		'blinky-left',
+		'blinky-right',
+		'inky-up',
+		'inky-down',
+		'inky-left',
+		'inky-right',
+		'pinky-up',
+		'pinky-down',
+		'pinky-left',
+		'pinky-right',
+		'clyde-up',
+		'clyde-down',
+		'clyde-left',
+		'clyde-right',
+		'eyes-up',
+		'eyes-down',
+		'eyes-left',
+		'eyes-right',
 		'scared'
 	];
 

@@ -35,6 +35,7 @@
 		"dev": "webpack --progress --config webpack.dev.js",
 		"prepublishOnly": "npm run build",
 		"build-action": "pnpm run --prefix ./github-action build",
+		"lint:fix": "pnpm exec prettier --write \"**/*.{ts,json,md}\"",
 		"test": "jest --coverage"
 	},
 	"devDependencies": {
