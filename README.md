@@ -132,15 +132,33 @@ Here's how to set up and run the games:
 3. **Customize Settings**: Adjust the parameters as needed:
     - `game`: The arcade game name to generate. For valid names, see table above.
     - `username`: Your GitHub or GitLab username.
-    - `platform`: Specify `'github'` or `'gitlab'`.
+    - `platform`: Specify `'github'`, `'gitlab'` or `'scenario'`.
     - `gameTheme`: Choose between `'github'`, `'github-dark'`, `'gitlab'`, or `'gitlab-dark'`.
-    - `scenario`: Use a predefined contribution scenario instead of fetching platform contributions. Available scenarios: `full`, `empty`, `random`, `checkerboard`, `gradient`, `streaks`.
+    - `scenario`: Use a predefined contribution scenario instead of fetching platform contributions. Available scenarios: `full`, `empty`, `random`, `checkerboard`, `gradient`, `streaks`. This option is only active when `platform` is set to `'scenario'`; with `platform: 'github'` or `platform: 'gitlab'`, real platform contributions are fetched and the scenario value is ignored.
     - `playerStyle` _(Pac-Man only)_: `PlayerStyle.OPPORTUNISTIC` (default), `PlayerStyle.CONSERVATIVE`, or `PlayerStyle.AGGRESSIVE`.
     - `svgCallback`: Called with the finished SVG string once generation is complete.
     - `gameOverCallback`: Called when the game finishes.
     - `pointsIncreasedCallback`: Called each time the score increases.
     - `gameStatsCallback`: Called at the end with `{ totalScore, steps, ghostsEaten }`.
     - `githubSettings`: `{ accessToken: 'your_token' }` for private contribution data.
+
+### CLI
+
+#### Basic
+
+```bash
+pacman-contribution-graph --game pacman --username demo --platform github --gameTheme github --output pacman-contribution-graph.svg
+```
+
+Use this mode for real contribution data from GitHub or GitLab. `--platform` and `--username` are required; `--game`, `--gameTheme`, and `--output` are optional.
+
+#### Scenario
+
+```bash
+pacman-contribution-graph --game pacman --username demo --platform scenario --gameTheme github --scenario checkerboard --output pacman-scenario.svg
+```
+
+Use this mode for predefined contribution data, for example demos, screenshots, or local testing. `--scenario` only works with `--platform scenario`; if omitted, the CLI uses `random`. `--username` is still required by the CLI, but in scenario mode it can be any placeholder value because no user data is fetched.
 
 ## Integrate into Your GitHub Profile
 
